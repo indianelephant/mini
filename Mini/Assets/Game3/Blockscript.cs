@@ -16,10 +16,11 @@ public class Blockscript : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (!flag) {
-            flag = true;
-            Destroy(block);
             Play1_Game3.addScore();
             Play1_Game3.addDesBlock();
+            flag = true;
+            Destroy(block);
+
         }
 
     }
